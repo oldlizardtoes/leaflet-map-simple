@@ -28,14 +28,14 @@
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
     center: [44.28, -68.32], // EDIT coordinates to re-center map
-    zoom: 4,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    zoom: 3,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
   L.tileLayer(
-    'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://osm.org/copyright">\
         OpenStreetMap</a> contributors, &copy;\
         <a href="https://carto.com/attribution">CARTO</a>'
